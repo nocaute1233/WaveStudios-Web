@@ -122,7 +122,7 @@ const translations = {
     service_clothing_title: "Uniformes & Roupas FiveM",
     service_clothing_desc: "Roupas e uniformes prontos para implementar no seu servidor FiveM. Alta qualidade, otimizados e prontos para uso imediato.",
     service_armor_title: "Blindagem de Veículos",
-    service_armor_desc: "Sistemas de blindagem profissional: 16, 32, 64 tiros ou blindagem completa. Balanceado para realismo e gameplay justo.",
+    service_armor_desc: "Sistemas de blindagem profissional: 16, 32, 64 tiros ou blindagem completa. Balanceado para realismo e gameplay justa.",
 
     // Bot Features Section
     bot_title: "Nosso Bot Discord",
@@ -989,3 +989,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguageSelector();
   translatePage();
 });
+
