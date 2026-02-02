@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Wave Studios Terms of Service - Read our terms before purchasing.">
     <title>Terms of Service - Wave Studios</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -15,14 +15,24 @@
         <div class="nav-container">
             <a href="index.html" class="logo">Wave Studios</a>
             <ul class="nav-links">
-                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
                 <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
                 <li><a href="terms.html" data-i18n="nav_terms">Terms</a></li>
-                <li><a href="https://discord.gg/GdwDWPp7QE" target="_blank" data-i18n="nav_discord">Discord</a></li>
+                <li><a href="https://discord.gg/uk3TcdAyUS" target="_blank" data-i18n="nav_discord">Discord</a></li>
             </ul>
-            <div class="language-selector">
-                <div class="lang-button">🌐</div>
-                <div class="lang-options"></div>
+            <div class="language-controls" style="display: flex; gap: 10px; align-items: center;">
+                <button class="lang-btn-quick" onclick="changeLanguage('pt')" data-lang="pt"
+                    style="background:none; border:none; color:var(--text-secondary); cursor:pointer; font-weight:600; display:flex; align-items:center; gap:5px;">
+                    <img src="../assets/images/ptbr.png" alt="PT" class="lang-flag" style="width:20px;">
+                    PT</button>
+                <button class="lang-btn-quick" onclick="changeLanguage('en')" data-lang="en"
+                    style="background:none; border:none; color:var(--text-secondary); cursor:pointer; font-weight:600; display:flex; align-items:center; gap:5px;">
+                    <img src="../assets/images/usuk.png" alt="EN" class="lang-flag" style="width:20px;">
+                    EN</button>
+                <div class="language-selector">
+                    <div class="lang-button">🌐</div>
+                    <div class="lang-options"></div>
+                </div>
             </div>
         </div>
     </nav>
@@ -30,23 +40,23 @@
     <!-- Terms Content -->
     <div class="terms-container">
         <div class="terms-header">
-            <h1>📄 <span data-i18n="terms_title">Terms of Service</span></h1>
-            <p data-i18n="terms_subtitle">Wave Studios Store</p>
+            <h1 class="fade-in-up">📄 <span data-i18n="terms_title">Terms of Service</span></h1>
+            <p class="fade-in-up delay-100" data-i18n="terms_subtitle">Wave Studios Store</p>
         </div>
 
-        <div class="term-item">
+        <div class="term-item fade-in-up delay-200">
             <h3>✅ <span data-i18n="term1_title">Acceptance of Terms</span></h3>
             <p data-i18n="term1_content">By purchasing any product or service from Wave Studios Store, you agree to
                 these Terms of Service. If you do not agree, please do not use our services.</p>
         </div>
 
-        <div class="term-item">
+        <div class="term-item fade-in-up delay-300">
             <h3>🛒 <span data-i18n="term2_title">Products and Services</span></h3>
             <p data-i18n="term2_content">All products sold are digital and/or virtual unless stated otherwise. Once
                 delivered, digital products are considered final.</p>
         </div>
 
-        <div class="term-item">
+        <div class="term-item fade-in-up delay-400">
             <h3>💳 <span data-i18n="term3_title">Payments</span></h3>
             <p data-i18n="term3_content">All payments must be completed before delivery. We are not responsible for
                 issues caused by incorrect payment information provided by the customer.</p>
@@ -94,8 +104,8 @@
                 taking any action.</p>
         </div>
 
-        <div style="text-align: center; margin-top: var(--spacing-xl);">
-            <a href="index.html" class="btn btn-primary" data-i18n="nav_home">Home</a>
+        <div class="text-center mt-lg fade-in-up delay-600" style="margin-top: var(--spacing-xl);">
+            <a href="../index.html" class="btn btn-primary" data-i18n="nav_home">Home</a>
         </div>
     </div>
 
@@ -106,12 +116,12 @@
             <p style="margin-top: 0.5rem;">
                 <a href="terms.html" data-i18n="nav_terms">Terms</a> •
                 <a href="about.html" data-i18n="nav_about">About Us</a> •
-                <a href="https://discord.gg/GdwDWPp7QE" target="_blank" data-i18n="nav_discord">Discord</a>
+                <a href="https://discord.gg/uk3TcdAyUS" target="_blank" data-i18n="nav_discord">Discord</a>
             </p>
         </div>
     </footer>
 
-    <script src="translations.js"></script>
+    <script src="../js/translations.js"></script>
 </body>
 
 </html>

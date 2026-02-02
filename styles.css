@@ -9,40 +9,43 @@
    CSS Variables & Design Tokens
    =================================== */
 :root {
-    /* Brand Colors */
-    --primary: #3163ac;
-    --primary-light: #4a7bc8;
-    --primary-dark: #234a7e;
-    --primary-glow: rgba(49, 99, 172, 0.4);
+    /* Brand Colors (Electric Blue Theme) */
+    --primary: #3B82F6;
+    /* Premium Electric Blue */
+    --primary-light: #60A5FA;
+    --primary-dark: #2563EB;
+    --primary-glow: rgba(59, 130, 246, 0.4);
 
-    /* Dark Theme Colors */
-    --bg-dark: #0a0e17;
-    --bg-darker: #050810;
-    --bg-card: rgba(20, 25, 40, 0.6);
-    --bg-card-hover: rgba(30, 35, 50, 0.8);
+    /* Backgrounds with Depth */
+    --bg-main: #0B0F1A;
+    --bg-secondary: #0F172A;
+    /* Slight blue tint */
+    --bg-card: #111827;
+    --bg-card-hover: #1F2937;
 
     /* Text Colors */
-    --text-primary: #ffffff;
-    --text-secondary: #b8c5d6;
-    --text-muted: #7a8a9e;
+    --text-primary: #F3F4F6;
+    --text-secondary: #9CA3AF;
+    --text-muted: #6B7280;
 
     /* Accent Colors */
-    --accent-blue: #5865f2;
-    --accent-success: #43b581;
-    --accent-warning: #faa61a;
+    --accent-cyan: #06B6D4;
+    /* Tech glow support */
+    --accent-success: #10B981;
+    --accent-warning: #F59E0B;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #3163ac 0%, #5865f2 100%);
-    --gradient-dark: linear-gradient(180deg, #0a0e17 0%, #1a1f35 100%);
-    --gradient-card: linear-gradient(135deg, rgba(49, 99, 172, 0.1) 0%, rgba(88, 101, 242, 0.1) 100%);
+    --gradient-primary: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+    --gradient-dark: linear-gradient(180deg, #0B0F1A 0%, #0F172A 100%);
+    --gradient-card: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(6, 182, 212, 0.05) 100%);
 
     /* Spacing */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 1.5rem;
     --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
-    --spacing-2xl: 4rem;
+    --spacing-xl: 4rem;
+    --spacing-2xl: 6rem;
 
     /* Border Radius */
     --radius-sm: 8px;
@@ -50,11 +53,12 @@
     --radius-lg: 16px;
     --radius-xl: 24px;
 
-    /* Shadows */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.2);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.3);
-    --shadow-glow: 0 0 40px var(--primary-glow);
+    /* Shadows (Clean & Premium) */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-glow: 0 0 25px var(--primary-glow);
+    /* Reduced intensity */
 
     /* Transitions */
     --transition-fast: 0.2s ease;
@@ -77,7 +81,7 @@ html {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: var(--bg-dark);
+    background: var(--bg-main);
     color: var(--text-primary);
     line-height: 1.6;
     overflow-x: hidden;
@@ -175,10 +179,11 @@ a:hover {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: var(--spacing-md) var(--spacing-lg);
-    background: rgba(10, 14, 23, 0.8);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: rgba(11, 15, 26, 0.85);
+    /* Matches bg-main */
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(124, 92, 255, 0.1);
 }
 
 .nav-container {
@@ -255,9 +260,9 @@ a:hover {
 }
 
 .btn-primary {
-    background: var(--gradient-primary);
+    background: var(--primary);
     color: white;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 0 15px rgba(124, 92, 255, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -276,8 +281,9 @@ a:hover {
 }
 
 .btn-primary:hover {
+    background: var(--primary-light);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg), var(--shadow-glow);
+    box-shadow: 0 0 25px rgba(124, 92, 255, 0.5);
 }
 
 .btn-primary:hover::before {
@@ -287,13 +293,14 @@ a:hover {
 
 .btn-secondary {
     background: transparent;
-    color: var(--primary);
-    border: 2px solid var(--primary);
+    color: var(--text-primary);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-secondary:hover {
-    background: var(--primary);
+    background: rgba(255, 255, 255, 0.05);
     color: white;
+    border-color: var(--primary);
     transform: translateY(-2px);
 }
 
@@ -333,13 +340,11 @@ a:hover {
 
 .hero h1 {
     margin-bottom: var(--spacing-md);
-    animation: fadeInUp 0.8s ease;
 }
 
 .hero p {
     font-size: 1.3rem;
     margin-bottom: var(--spacing-xl);
-    animation: fadeInUp 0.8s ease 0.2s backwards;
 }
 
 .hero-buttons {
@@ -347,7 +352,6 @@ a:hover {
     gap: var(--spacing-md);
     justify-content: center;
     flex-wrap: wrap;
-    animation: fadeInUp 0.8s ease 0.4s backwards;
 }
 
 @keyframes fadeInUp {
@@ -374,10 +378,10 @@ a:hover {
 
 .card {
     background: var(--bg-card);
-    backdrop-filter: blur(20px);
     border-radius: var(--radius-lg);
     padding: var(--spacing-xl);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(124, 92, 255, 0.05);
+    /* Very subtle purple border */
     transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
@@ -397,19 +401,23 @@ a:hover {
 
 .card:hover {
     background: var(--bg-card-hover);
-    transform: translateY(-8px);
+    transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
-    border-color: var(--primary);
+    border-color: rgba(124, 92, 255, 0.3);
 }
 
 .card:hover::before {
     transform: scaleX(1);
 }
 
-.card-icon {
-    font-size: 3rem;
+.card-icon-img {
+    width: 64px;
+    height: 64px;
     margin-bottom: var(--spacing-md);
     display: block;
+    object-fit: contain;
+    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3));
+    /* Subtle glow matching theme */
 }
 
 .card h3 {
@@ -431,6 +439,7 @@ a:hover {
     margin-top: var(--spacing-lg);
 }
 
+/* Feature List */
 .feature-item {
     display: flex;
     align-items: flex-start;
@@ -447,9 +456,12 @@ a:hover {
     border-color: var(--primary);
 }
 
-.feature-icon {
-    font-size: 1.5rem;
+.feature-icon-img {
+    width: 32px;
+    height: 32px;
     flex-shrink: 0;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.3));
 }
 
 .feature-text {
@@ -532,7 +544,7 @@ a:hover {
 }
 
 .lang-button {
-    background: var(--bg-card);
+    background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-md);
     padding: 0.5rem 1rem;
@@ -541,8 +553,7 @@ a:hover {
     gap: 0.5rem;
     cursor: pointer;
     transition: all var(--transition-fast);
-    font-size: 1.2rem;
-    backdrop-filter: blur(10px);
+    font-size: 1rem;
 }
 
 .lang-button:hover {
@@ -602,7 +613,8 @@ a:hover {
 }
 
 .lang-option.active {
-    background: var(--gradient-primary);
+    background: var(--primary);
+    /* Solid purple */
     color: white;
 }
 
@@ -612,6 +624,14 @@ a:hover {
 
 .lang-option.active span {
     color: white;
+}
+
+.lang-flag {
+    width: 24px;
+    height: auto;
+    border-radius: 2px;
+    object-fit: contain;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* RTL Support for Arabic */
@@ -697,6 +717,45 @@ a:hover {
     margin-bottom: var(--spacing-lg);
 }
 
-.fade-in {
-    animation: fadeInUp 0.8s ease;
+
+/* Animation Utilities */
+.fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    opacity: 0;
+}
+
+.delay-100 {
+    animation-delay: 0.1s;
+}
+
+.delay-200 {
+    animation-delay: 0.2s;
+}
+
+.delay-300 {
+    animation-delay: 0.3s;
+}
+
+.delay-400 {
+    animation-delay: 0.4s;
+}
+
+.delay-500 {
+    animation-delay: 0.5s;
+}
+
+.delay-600 {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

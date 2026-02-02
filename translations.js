@@ -9,23 +9,37 @@ const translations = {
 
     // Hero Section
     hero_title: "Wave Studios",
-    hero_subtitle: "Professional and exclusive design for GTA RP and FiveM servers. We create custom logos, uniforms, clothing, and vehicle armor systems with premium quality.",
+    hero_subtitle: "Premium systems and design for GTA RP servers.<br>Custom solutions built to elevate your roleplay experience. From in-game systems to Discord automation.",
+    hero_btn_start: "Start your project",
     hero_btn_discord: "Join Discord",
     hero_btn_bot: "Meet Our Bot",
 
     // Services Section
     services_title: "Our Services",
-    services_subtitle: "We offer complete design and system solutions to elevate your server to the next level",
+    services_subtitle: "Custom solutions built to elevate your roleplay experience",
+
+    // New Services Keys
+    service_liveries_title: "Vehicle Liveries",
+    service_liveries_desc: "Professional vehicle liveries created for immersion and visual consistency. Ideal for police, EMS and special units.",
+
+    service_uniforms_title: "Uniforms",
+    service_uniforms_desc: "Custom-made uniforms designed to match your server’s identity. High-quality textures, realistic details and optimized performance.",
+
+    service_armor_title: "Vehicle Armor System",
+    service_armor_desc: "A balanced and realistic vehicle armor system. Designed to improve gameplay without breaking immersion or server balance.",
+
+    service_bot_service_title: "Discord Bot",
+    service_bot_service_desc: "A custom Discord bot built specifically for GTA RP communities. Automation, moderation and staff tools tailored to your server’s needs.",
+
+    // Deprecated but kept for safety if needed temporarily
     service_logo_title: "Custom Logos",
     service_logo_desc: "We create unique and professional logos for GTA RP servers, stores, and organizations. Modern and exclusive design that represents your brand.",
     service_clothing_title: "Uniforms & FiveM Clothing",
     service_clothing_desc: "Ready-to-implement clothing and uniforms for your FiveM server. High quality, optimized, and ready for immediate use.",
-    service_armor_title: "Vehicle Armor",
-    service_armor_desc: "Professional armor systems: 16, 32, 64 shots or full armor. Balanced for realism and fair gameplay.",
 
     // Bot Features Section
     bot_title: "Our Discord Bot",
-    bot_subtitle: "Internally developed bot with futuristic systems and advanced security",
+    bot_subtitle: "A Discord bot designed for RP servers that need more than basic features. Fully customizable, scalable and adapted to your community.",
     bot_tickets: "Smart Ticket System",
     bot_tickets_desc: "Categories, priorities, tags, and SLA control",
     bot_security: "Advanced Security",
@@ -39,13 +53,28 @@ const translations = {
     bot_verification: "Verification Website",
     bot_verification_desc: "Standalone system with integrated captcha",
 
+    // About Us (Home)
+    home_about_title: "About Us",
+    home_about_main: "Wave Studios is an independent creative studio focused on delivering high-quality solutions for GTA RP servers.",
+    home_about_sub: "We believe in clean design, optimized systems and clear communication. Every project is treated with care, from the first idea to final delivery.",
+    home_about_tagline: "Quality over quantity. Every project matters.",
+
+    // Why Wave Studios
+    why_title: "Why Wave Studios",
+    why_1: "Focused on quality and performance",
+    why_2: "Designed for serious roleplay communities",
+    why_3: "Attention to detail in every project",
+    why_4: "Custom solutions, not mass-produced work",
+
     // CTA Section
-    cta_title: "Ready to Get Started?",
-    cta_subtitle: "Join our Discord, complete verification, and acquire our services or ask any questions with our team.",
-    cta_btn: "Join Discord Now",
+    cta_title: "Ready to bring your idea to life?",
+    cta_subtitle: "Get in touch and start your project today.",
+    cta_btn: "Contact us",
+    cta_btn_discord: "Join Discord",
 
     // Footer
     footer_rights: "All rights reserved.",
+    footer_tagline: "Custom solutions for GTA RP servers",
 
     // Terms Page
     terms_title: "Terms of Service",
@@ -116,13 +145,39 @@ const translations = {
 
     // Services Section
     services_title: "Nossos Serviços",
-    services_subtitle: "Oferecemos soluções completas de design e sistemas para elevar seu servidor ao próximo nível",
+
+    // New Services Keys (Fallback to English)
+    service_liveries_title: "Vehicle Liveries",
+    service_liveries_desc: "Professional vehicle liveries created for immersion and visual consistency. Ideal for police, EMS and special units.",
+    service_uniforms_title: "Uniforms",
+    service_uniforms_desc: "Custom-made uniforms designed to match your server’s identity. High-quality textures, realistic details and optimized performance.",
+    service_armor_title: "Vehicle Armor System",
+    service_armor_desc: "A balanced and realistic vehicle armor system. Designed to improve gameplay without breaking immersion or server balance.",
+    service_bot_service_title: "Discord Bot",
+    service_bot_service_desc: "A custom Discord bot built specifically for GTA RP communities. Automation, moderation and staff tools tailored to your server’s needs.",
+
+    // About Us (Home)
+    home_about_title: "About Us",
+    home_about_main: "Wave Studios is an independent creative studio focused on delivering high-quality solutions for GTA RP servers.",
+    home_about_sub: "We believe in clean design, optimized systems and clear communication. Every project is treated with care, from the first idea to final delivery.",
+    home_about_tagline: "Quality over quantity. Every project matters.",
+
+    // Why Wave Studios
+    why_title: "Why Wave Studios",
+    why_1: "Focused on quality and performance",
+    why_2: "Designed for serious roleplay communities",
+    why_3: "Attention to detail in every project",
+    why_4: "Custom solutions, not mass-produced work",
+
+    hero_btn_start: "Start your project",
+    footer_tagline: "Custom solutions for GTA RP servers",
+
     service_logo_title: "Logos Personalizadas",
     service_logo_desc: "Criamos logos únicas e profissionais para servidores de GTA RP, lojas e organizações. Design moderno e exclusivo que representa sua marca.",
     service_clothing_title: "Uniformes & Roupas FiveM",
     service_clothing_desc: "Roupas e uniformes prontos para implementar no seu servidor FiveM. Alta qualidade, otimizados e prontos para uso imediato.",
     service_armor_title: "Blindagem de Veículos",
-    service_armor_desc: "Sistemas de blindagem profissional: 16, 32, 64 tiros ou blindagem completa. Balanceado para realismo e gameplay justa.",
+    service_armor_desc: "Sistemas de blindagem profissional: 16, 32, 64 tiros ou blindagem completa. Balanceado para realismo e gameplay justo.",
 
     // Bot Features Section
     bot_title: "Nosso Bot Discord",
@@ -213,6 +268,27 @@ const translations = {
     hero_btn_bot: "Conoce Nuestro Bot",
     services_title: "Nuestros Servicios",
     services_subtitle: "Ofrecemos soluciones completas de diseño y sistemas para elevar tu servidor al siguiente nivel",
+
+    // New Services Keys (Fallback to English)
+    service_liveries_title: "Vehicle Liveries",
+    service_liveries_desc: "Professional vehicle liveries created for immersion and visual consistency. Ideal for police, EMS and special units.",
+    service_uniforms_title: "Uniforms",
+    service_uniforms_desc: "Custom-made uniforms designed to match your server’s identity. High-quality textures, realistic details and optimized performance.",
+    service_armor_title: "Vehicle Armor System",
+    service_armor_desc: "A balanced and realistic vehicle armor system. Designed to improve gameplay without breaking immersion or server balance.",
+    service_bot_service_title: "Discord Bot",
+    service_bot_service_desc: "A custom Discord bot built specifically for GTA RP communities. Automation, moderation and staff tools tailored to your server’s needs.",
+    home_about_title: "About Us",
+    home_about_main: "Wave Studios is an independent creative studio focused on delivering high-quality solutions for GTA RP servers.",
+    home_about_sub: "We believe in clean design, optimized systems and clear communication. Every project is treated with care, from the first idea to final delivery.",
+    home_about_tagline: "Quality over quantity. Every project matters.",
+    why_title: "Why Wave Studios",
+    why_1: "Focused on quality and performance",
+    why_2: "Designed for serious roleplay communities",
+    why_3: "Attention to detail in every project",
+    why_4: "Custom solutions, not mass-produced work",
+    hero_btn_start: "Start your project",
+    footer_tagline: "Custom solutions for GTA RP servers",
     service_logo_title: "Logos Personalizados",
     service_logo_desc: "Creamos logos únicos y profesionales para servidores GTA RP, tiendas y organizaciones. Diseño moderno y exclusivo que representa tu marca.",
     service_clothing_title: "Uniformes y Ropa FiveM",
@@ -299,6 +375,25 @@ const translations = {
     hero_btn_bot: "了解我们的机器人",
     services_title: "我们的服务",
     services_subtitle: "我们提供完整的设计和系统解决方案，将您的服务器提升到新水平",
+    service_liveries_title: "Vehicle Liveries",
+    service_liveries_desc: "Professional vehicle liveries created for immersion and visual consistency. Ideal for police, EMS and special units.",
+    service_uniforms_title: "Uniforms",
+    service_uniforms_desc: "Custom-made uniforms designed to match your server’s identity. High-quality textures, realistic details and optimized performance.",
+    service_armor_title: "Vehicle Armor System",
+    service_armor_desc: "A balanced and realistic vehicle armor system. Designed to improve gameplay without breaking immersion or server balance.",
+    service_bot_service_title: "Discord Bot",
+    service_bot_service_desc: "A custom Discord bot built specifically for GTA RP communities. Automation, moderation and staff tools tailored to your server’s needs.",
+    home_about_title: "About Us",
+    home_about_main: "Wave Studios is an independent creative studio focused on delivering high-quality solutions for GTA RP servers.",
+    home_about_sub: "We believe in clean design, optimized systems and clear communication. Every project is treated with care, from the first idea to final delivery.",
+    home_about_tagline: "Quality over quantity. Every project matters.",
+    why_title: "Why Wave Studios",
+    why_1: "Focused on quality and performance",
+    why_2: "Designed for serious roleplay communities",
+    why_3: "Attention to detail in every project",
+    why_4: "Custom solutions, not mass-produced work",
+    hero_btn_start: "Start your project",
+    footer_tagline: "Custom solutions for GTA RP servers",
     service_logo_title: "定制标志",
     service_logo_desc: "我们为GTA RP服务器、商店和组织创建独特而专业的标志。代表您品牌的现代独家设计。",
     service_clothing_title: "制服和FiveM服装",
@@ -385,6 +480,25 @@ const translations = {
     hero_btn_bot: "Познакомьтесь с нашим ботом",
     services_title: "Наши услуги",
     services_subtitle: "Мы предлагаем комплексные решения по дизайну и системам для вывода вашего сервера на новый уровень",
+    service_liveries_title: "Vehicle Liveries",
+    service_liveries_desc: "Professional vehicle liveries created for immersion and visual consistency. Ideal for police, EMS and special units.",
+    service_uniforms_title: "Uniforms",
+    service_uniforms_desc: "Custom-made uniforms designed to match your server’s identity. High-quality textures, realistic details and optimized performance.",
+    service_armor_title: "Vehicle Armor System",
+    service_armor_desc: "A balanced and realistic vehicle armor system. Designed to improve gameplay without breaking immersion or server balance.",
+    service_bot_service_title: "Discord Bot",
+    service_bot_service_desc: "A custom Discord bot built specifically for GTA RP communities. Automation, moderation and staff tools tailored to your server’s needs.",
+    home_about_title: "About Us",
+    home_about_main: "Wave Studios is an independent creative studio focused on delivering high-quality solutions for GTA RP servers.",
+    home_about_sub: "We believe in clean design, optimized systems and clear communication. Every project is treated with care, from the first idea to final delivery.",
+    home_about_tagline: "Quality over quantity. Every project matters.",
+    why_title: "Why Wave Studios",
+    why_1: "Focused on quality and performance",
+    why_2: "Designed for serious roleplay communities",
+    why_3: "Attention to detail in every project",
+    why_4: "Custom solutions, not mass-produced work",
+    hero_btn_start: "Start your project",
+    footer_tagline: "Custom solutions for GTA RP servers",
     service_logo_title: "Индивидуальные логотипы",
     service_logo_desc: "Мы создаем уникальные и профессиональные логотипы для серверов GTA RP, магазинов и организаций. Современный и эксклюзивный дизайн, представляющий ваш бренд.",
     service_clothing_title: "Униформа и одежда FiveM",
@@ -471,6 +585,25 @@ const translations = {
     hero_btn_bot: "私たちのボットに会う",
     services_title: "私たちのサービス",
     services_subtitle: "サーバーを次のレベルに引き上げるための完全なデザインとシステムソリューションを提供します",
+    service_liveries_title: "Vehicle Liveries",
+    service_liveries_desc: "Professional vehicle liveries created for immersion and visual consistency. Ideal for police, EMS and special units.",
+    service_uniforms_title: "Uniforms",
+    service_uniforms_desc: "Custom-made uniforms designed to match your server’s identity. High-quality textures, realistic details and optimized performance.",
+    service_armor_title: "Vehicle Armor System",
+    service_armor_desc: "A balanced and realistic vehicle armor system. Designed to improve gameplay without breaking immersion or server balance.",
+    service_bot_service_title: "Discord Bot",
+    service_bot_service_desc: "A custom Discord bot built specifically for GTA RP communities. Automation, moderation and staff tools tailored to your server’s needs.",
+    home_about_title: "About Us",
+    home_about_main: "Wave Studios is an independent creative studio focused on delivering high-quality solutions for GTA RP servers.",
+    home_about_sub: "We believe in clean design, optimized systems and clear communication. Every project is treated with care, from the first idea to final delivery.",
+    home_about_tagline: "Quality over quantity. Every project matters.",
+    why_title: "Why Wave Studios",
+    why_1: "Focused on quality and performance",
+    why_2: "Designed for serious roleplay communities",
+    why_3: "Attention to detail in every project",
+    why_4: "Custom solutions, not mass-produced work",
+    hero_btn_start: "Start your project",
+    footer_tagline: "Custom solutions for GTA RP servers",
     service_logo_title: "カスタムロゴ",
     service_logo_desc: "GTA RPサーバー、ストア、組織向けのユニークでプロフェッショナルなロゴを作成します。ブランドを表現するモダンで独占的なデザイン。",
     service_clothing_title: "ユニフォームとFiveM衣服",
@@ -557,6 +690,25 @@ const translations = {
     hero_btn_bot: "تعرف على بوتنا",
     services_title: "خدماتنا",
     services_subtitle: "نقدم حلول تصميم وأنظمة كاملة لرفع خادمك إلى المستوى التالي",
+    service_liveries_title: "Vehicle Liveries",
+    service_liveries_desc: "Professional vehicle liveries created for immersion and visual consistency. Ideal for police, EMS and special units.",
+    service_uniforms_title: "Uniforms",
+    service_uniforms_desc: "Custom-made uniforms designed to match your server’s identity. High-quality textures, realistic details and optimized performance.",
+    service_armor_title: "Vehicle Armor System",
+    service_armor_desc: "A balanced and realistic vehicle armor system. Designed to improve gameplay without breaking immersion or server balance.",
+    service_bot_service_title: "Discord Bot",
+    service_bot_service_desc: "A custom Discord bot built specifically for GTA RP communities. Automation, moderation and staff tools tailored to your server’s needs.",
+    home_about_title: "About Us",
+    home_about_main: "Wave Studios is an independent creative studio focused on delivering high-quality solutions for GTA RP servers.",
+    home_about_sub: "We believe in clean design, optimized systems and clear communication. Every project is treated with care, from the first idea to final delivery.",
+    home_about_tagline: "Quality over quantity. Every project matters.",
+    why_title: "Why Wave Studios",
+    why_1: "Focused on quality and performance",
+    why_2: "Designed for serious roleplay communities",
+    why_3: "Attention to detail in every project",
+    why_4: "Custom solutions, not mass-produced work",
+    hero_btn_start: "Start your project",
+    footer_tagline: "Custom solutions for GTA RP servers",
     service_logo_title: "شعارات مخصصة",
     service_logo_desc: "نقوم بإنشاء شعارات فريدة واحترافية لخوادم GTA RP والمتاجر والمنظمات. تصميم حديث وحصري يمثل علامتك التجارية.",
     service_clothing_title: "الزي الرسمي وملابس FiveM",
@@ -643,6 +795,25 @@ const translations = {
     hero_btn_bot: "Botumuzu Tanıyın",
     services_title: "Hizmetlerimiz",
     services_subtitle: "Sunucunuzu bir üst seviyeye taşımak için eksiksiz tasarım ve sistem çözümleri sunuyoruz",
+    service_liveries_title: "Vehicle Liveries",
+    service_liveries_desc: "Professional vehicle liveries created for immersion and visual consistency. Ideal for police, EMS and special units.",
+    service_uniforms_title: "Uniforms",
+    service_uniforms_desc: "Custom-made uniforms designed to match your server’s identity. High-quality textures, realistic details and optimized performance.",
+    service_armor_title: "Vehicle Armor System",
+    service_armor_desc: "A balanced and realistic vehicle armor system. Designed to improve gameplay without breaking immersion or server balance.",
+    service_bot_service_title: "Discord Bot",
+    service_bot_service_desc: "A custom Discord bot built specifically for GTA RP communities. Automation, moderation and staff tools tailored to your server’s needs.",
+    home_about_title: "About Us",
+    home_about_main: "Wave Studios is an independent creative studio focused on delivering high-quality solutions for GTA RP servers.",
+    home_about_sub: "We believe in clean design, optimized systems and clear communication. Every project is treated with care, from the first idea to final delivery.",
+    home_about_tagline: "Quality over quantity. Every project matters.",
+    why_title: "Why Wave Studios",
+    why_1: "Focused on quality and performance",
+    why_2: "Designed for serious roleplay communities",
+    why_3: "Attention to detail in every project",
+    why_4: "Custom solutions, not mass-produced work",
+    hero_btn_start: "Start your project",
+    footer_tagline: "Custom solutions for GTA RP servers",
     service_logo_title: "Özel Logolar",
     service_logo_desc: "GTA RP sunucuları, mağazalar ve organizasyonlar için benzersiz ve profesyonel logolar oluşturuyoruz. Markanızı temsil eden modern ve özel tasarım.",
     service_clothing_title: "Üniformalar ve FiveM Giysileri",
@@ -730,6 +901,25 @@ const translations = {
     hero_btn_bot: "Découvrez notre Bot",
     services_title: "Nos Services",
     services_subtitle: "Nous offrons des solutions complètes de design et de systèmes pour élever votre serveur au niveau supérieur",
+    service_liveries_title: "Vehicle Liveries",
+    service_liveries_desc: "Professional vehicle liveries created for immersion and visual consistency. Ideal for police, EMS and special units.",
+    service_uniforms_title: "Uniforms",
+    service_uniforms_desc: "Custom-made uniforms designed to match your server’s identity. High-quality textures, realistic details and optimized performance.",
+    service_armor_title: "Vehicle Armor System",
+    service_armor_desc: "A balanced and realistic vehicle armor system. Designed to improve gameplay without breaking immersion or server balance.",
+    service_bot_service_title: "Discord Bot",
+    service_bot_service_desc: "A custom Discord bot built specifically for GTA RP communities. Automation, moderation and staff tools tailored to your server’s needs.",
+    home_about_title: "About Us",
+    home_about_main: "Wave Studios is an independent creative studio focused on delivering high-quality solutions for GTA RP servers.",
+    home_about_sub: "We believe in clean design, optimized systems and clear communication. Every project is treated with care, from the first idea to final delivery.",
+    home_about_tagline: "Quality over quantity. Every project matters.",
+    why_title: "Why Wave Studios",
+    why_1: "Focused on quality and performance",
+    why_2: "Designed for serious roleplay communities",
+    why_3: "Attention to detail in every project",
+    why_4: "Custom solutions, not mass-produced work",
+    hero_btn_start: "Start your project",
+    footer_tagline: "Custom solutions for GTA RP servers",
     service_logo_title: "Logos Personnalisés",
     service_logo_desc: "Nous créons des logos uniques et professionnels pour les serveurs GTA RP, les magasins et les organisations. Design moderne et exclusif qui représente votre marque.",
     service_clothing_title: "Uniformes et Vêtements FiveM",
@@ -816,6 +1006,25 @@ const translations = {
     hero_btn_bot: "Lernen Sie unseren Bot kennen",
     services_title: "Unsere Dienstleistungen",
     services_subtitle: "Wir bieten komplette Design- und Systemlösungen, um Ihren Server auf die nächste Stufe zu heben",
+    service_liveries_title: "Vehicle Liveries",
+    service_liveries_desc: "Professional vehicle liveries created for immersion and visual consistency. Ideal for police, EMS and special units.",
+    service_uniforms_title: "Uniforms",
+    service_uniforms_desc: "Custom-made uniforms designed to match your server’s identity. High-quality textures, realistic details and optimized performance.",
+    service_armor_title: "Vehicle Armor System",
+    service_armor_desc: "A balanced and realistic vehicle armor system. Designed to improve gameplay without breaking immersion or server balance.",
+    service_bot_service_title: "Discord Bot",
+    service_bot_service_desc: "A custom Discord bot built specifically for GTA RP communities. Automation, moderation and staff tools tailored to your server’s needs.",
+    home_about_title: "About Us",
+    home_about_main: "Wave Studios is an independent creative studio focused on delivering high-quality solutions for GTA RP servers.",
+    home_about_sub: "We believe in clean design, optimized systems and clear communication. Every project is treated with care, from the first idea to final delivery.",
+    home_about_tagline: "Quality over quantity. Every project matters.",
+    why_title: "Why Wave Studios",
+    why_1: "Focused on quality and performance",
+    why_2: "Designed for serious roleplay communities",
+    why_3: "Attention to detail in every project",
+    why_4: "Custom solutions, not mass-produced work",
+    hero_btn_start: "Start your project",
+    footer_tagline: "Custom solutions for GTA RP servers",
     service_logo_title: "Individuelle Logos",
     service_logo_desc: "Wir erstellen einzigartige und professionelle Logos für GTA RP Server, Geschäfte und Organisationen. Modernes und exklusives Design, das Ihre Marke repräsentiert.",
     service_clothing_title: "Uniformen & FiveM Kleidung",
@@ -894,16 +1103,16 @@ const translations = {
 
 // Language configuration with country flags
 const languages = {
-  en: { name: "English", flag: "🇺🇸" },
-  pt: { name: "Português", flag: "🇧🇷" },
-  es: { name: "Español", flag: "🇪🇸" },
-  zh: { name: "中文", flag: "🇨🇳" },
-  ru: { name: "Русский", flag: "🇷🇺" },
-  ja: { name: "日本語", flag: "🇯🇵" },
-  ar: { name: "العربية", flag: "🇸🇦" },
-  tr: { name: "Türkçe", flag: "🇹🇷" },
-  fr: { name: "Français", flag: "🇫🇷" },
-  de: { name: "Deutsch", flag: "🇩🇪" }
+  en: { name: "English", flag: "usuk.png" },
+  pt: { name: "Português", flag: "ptbr.png" },
+  es: { name: "Español", flag: "es.png" },
+  zh: { name: "中文", flag: "cn.png" },
+  ru: { name: "Русский", flag: "ru.png" },
+  ja: { name: "日本語", flag: "jp.png" },
+  ar: { name: "العربية", flag: "sa.png" },
+  tr: { name: "Türkçe", flag: "tr.png" },
+  fr: { name: "Français", flag: "fr.png" },
+  de: { name: "Deutsch", flag: "de.png" }
 };
 
 // Get current language from localStorage or default to English
@@ -915,7 +1124,7 @@ function translatePage() {
   elements.forEach(element => {
     const key = element.getAttribute('data-i18n');
     if (translations[currentLanguage] && translations[currentLanguage][key]) {
-      element.textContent = translations[currentLanguage][key];
+      element.innerHTML = translations[currentLanguage][key];
     }
   });
 
@@ -943,6 +1152,20 @@ function changeLanguage(lang) {
       option.classList.add('active');
     }
   });
+
+  // Update quick buttons style
+  document.querySelectorAll('.lang-btn-quick').forEach(btn => {
+    // Check data-lang attribute if available, otherwise fallback to text content content logic (though data-lang is safer)
+    const btnLang = btn.getAttribute('data-lang');
+    if (btnLang === lang) {
+      btn.style.color = 'var(--primary)';
+      btn.style.textShadow = '0 0 10px var(--primary-glow)';
+      // Also highlight the text if needed
+    } else {
+      btn.style.color = 'var(--text-secondary)';
+      btn.style.textShadow = 'none';
+    }
+  });
 }
 
 // Initialize language selector
@@ -952,12 +1175,22 @@ function initLanguageSelector() {
 
   const langOptions = langSelector.querySelector('.lang-options');
 
+  // Determine base path for assets based on current location
+  // If we are in the /pages/ directory, we need to go up one level
+  const isPagesDir = window.location.pathname.includes('/pages/');
+  const basePath = isPagesDir ? '../' : '';
+
   // Create language options
   Object.keys(languages).forEach(langCode => {
     const option = document.createElement('div');
     option.className = 'lang-option';
     option.setAttribute('data-lang', langCode);
-    option.innerHTML = `${languages[langCode].flag} <span>${languages[langCode].name}</span>`;
+
+    // Adjust flag path based on location
+    const flagPath = `${basePath}assets/images/${languages[langCode].flag}`;
+
+    // Use img tag for flag
+    option.innerHTML = `<img src="${flagPath}" alt="${languages[langCode].name}" class="lang-flag"> <span>${languages[langCode].name}</span>`;
 
     if (langCode === currentLanguage) {
       option.classList.add('active');
@@ -984,9 +1217,24 @@ function initLanguageSelector() {
   });
 }
 
+// Function to load icons dynamically
+function loadIcons() {
+  // Determine base path for assets based on current location
+  const isPagesDir = window.location.pathname.includes('/pages/');
+  const basePath = isPagesDir ? '../' : '';
+
+  const icons = document.querySelectorAll('[data-icon]');
+  icons.forEach(icon => {
+    const filename = icon.getAttribute('data-icon');
+    if (filename) {
+      icon.src = `${basePath}assets/icons/${filename}`;
+    }
+  });
+}
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
   initLanguageSelector();
   translatePage();
+  loadIcons();
 });
-

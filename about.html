@@ -7,7 +7,7 @@
     <meta name="description"
         content="About Wave Studios - Creative design studio for GTA RP servers with advanced Discord bot.">
     <title>About Us - Wave Studios</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
@@ -16,14 +16,24 @@
         <div class="nav-container">
             <a href="index.html" class="logo">Wave Studios</a>
             <ul class="nav-links">
-                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="../index.html" data-i18n="nav_home">Home</a></li>
                 <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
                 <li><a href="terms.html" data-i18n="nav_terms">Terms</a></li>
-                <li><a href="https://discord.gg/GdwDWPp7QE" target="_blank" data-i18n="nav_discord">Discord</a></li>
+                <li><a href="https://discord.gg/uk3TcdAyUS" target="_blank" data-i18n="nav_discord">Discord</a></li>
             </ul>
-            <div class="language-selector">
-                <div class="lang-button">🌐</div>
-                <div class="lang-options"></div>
+            <div class="language-controls" style="display: flex; gap: 10px; align-items: center;">
+                <button class="lang-btn-quick" onclick="changeLanguage('pt')" data-lang="pt"
+                    style="background:none; border:none; color:var(--text-secondary); cursor:pointer; font-weight:600; display:flex; align-items:center; gap:5px;">
+                    <img src="../assets/images/ptbr.png" alt="PT" class="lang-flag" style="width:20px;">
+                    PT</button>
+                <button class="lang-btn-quick" onclick="changeLanguage('en')" data-lang="en"
+                    style="background:none; border:none; color:var(--text-secondary); cursor:pointer; font-weight:600; display:flex; align-items:center; gap:5px;">
+                    <img src="../assets/images/usuk.png" alt="EN" class="lang-flag" style="width:20px;">
+                    EN</button>
+                <div class="language-selector">
+                    <div class="lang-button">🌐</div>
+                    <div class="lang-options"></div>
+                </div>
             </div>
         </div>
     </nav>
@@ -31,11 +41,11 @@
     <!-- About Content -->
     <div class="terms-container">
         <div class="terms-header">
-            <h1>🌊 <span data-i18n="about_title">About Us</span></h1>
-            <p data-i18n="about_subtitle">Wave Studios</p>
+            <h1 class="fade-in-up">🌊 <span data-i18n="about_title">About Us</span></h1>
+            <p class="fade-in-up delay-100" data-i18n="about_subtitle">Wave Studios</p>
         </div>
 
-        <div class="term-item">
+        <div class="term-item fade-in-up delay-200">
             <p data-i18n="about_intro">Wave Studios is a creative design studio specialized in custom logo design,
                 clothing/uniform creation, and vehicle armor solutions for GTA / FiveM servers and online communities.
             </p>
@@ -44,7 +54,7 @@
                 creativity, precision, and attention to detail.</p>
         </div>
 
-        <div class="term-item">
+        <div class="term-item fade-in-up delay-300">
             <h3>🚗 <span data-i18n="about_armor_title">Vehicle Armor Services</span></h3>
             <p data-i18n="about_armor_intro">We offer professional vehicle armor solutions tailored for roleplay and PvP
                 environments:</p>
@@ -59,7 +69,7 @@
                 match your server's needs and standards.</p>
         </div>
 
-        <div class="term-item">
+        <div class="term-item fade-in-up delay-400">
             <h3>🤖 <span data-i18n="about_bot_title">Introducing Our New Bot</span></h3>
             <p data-i18n="about_bot_intro">We are proud to introduce our new Discord bot, fully developed by us, built
                 with futuristic systems and designed to integrate seamlessly with our store and community.</p>
@@ -67,13 +77,13 @@
                 professional server management, raising the standard for Discord communities.</p>
         </div>
 
-        <div class="term-item">
+        <div class="term-item fade-in-up delay-500">
             <h3>⚙️ <span data-i18n="about_features_title">Bot Features</span></h3>
             <p data-i18n="about_features_intro">Our bot includes powerful and advanced systems such as:</p>
 
             <div class="features-list" style="margin-top: 1.5rem;">
                 <div class="feature-item">
-                    <span class="feature-icon">🎟️</span>
+                    <img data-icon="ticket.png" alt="Ticket" class="feature-icon-img">
                     <div class="feature-text">
                         <h4 data-i18n="bot_tickets">Smart Ticket System</h4>
                         <p data-i18n="bot_tickets_desc">Categories, priorities, tags, and SLA control</p>
@@ -81,7 +91,7 @@
                 </div>
 
                 <div class="feature-item">
-                    <span class="feature-icon">🛡️</span>
+                    <img data-icon="security.png" alt="Security" class="feature-icon-img">
                     <div class="feature-text">
                         <h4 data-i18n="bot_security">Advanced Security</h4>
                         <p data-i18n="bot_security_desc">Anti-raid, anti-link, anti-spam, and anti-phishing</p>
@@ -89,7 +99,7 @@
                 </div>
 
                 <div class="feature-item">
-                    <span class="feature-icon">🔐</span>
+                    <img data-icon="antivpn.png" alt="AntiVPN" class="feature-icon-img">
                     <div class="feature-text">
                         <h4 data-i18n="bot_antivpn">Anti-VPN System</h4>
                         <p data-i18n="bot_antivpn_desc">Protection against ban evasion and fake accounts</p>
@@ -97,7 +107,7 @@
                 </div>
 
                 <div class="feature-item">
-                    <span class="feature-icon">👮</span>
+                    <img data-icon="moderation.png" alt="Moderation" class="feature-icon-img">
                     <div class="feature-text">
                         <h4 data-i18n="bot_moderation">Complete Moderation</h4>
                         <p data-i18n="bot_moderation_desc">Timeouts, bans, logs, and admin tools</p>
@@ -105,7 +115,7 @@
                 </div>
 
                 <div class="feature-item">
-                    <span class="feature-icon">🔍</span>
+                    <img data-icon="behavior.png" alt="Analysis" class="feature-icon-img">
                     <div class="feature-text">
                         <h4 data-i18n="bot_analysis">Behavior Analysis</h4>
                         <p data-i18n="bot_analysis_desc">Intelligent threat and pattern detection</p>
@@ -113,7 +123,7 @@
                 </div>
 
                 <div class="feature-item">
-                    <span class="feature-icon">🌐</span>
+                    <img data-icon="verify.png" alt="Verification" class="feature-icon-img">
                     <div class="feature-text">
                         <h4 data-i18n="bot_verification">Verification Website</h4>
                         <p data-i18n="bot_verification_desc">Standalone system with integrated captcha</p>
@@ -122,7 +132,7 @@
             </div>
         </div>
 
-        <div class="term-item">
+        <div class="term-item fade-in-up delay-600">
             <h3>🔒 <span data-i18n="about_antivpn_title">Anti-VPN & Ban Protection System</span></h3>
             <p data-i18n="about_antivpn_intro">Our server uses a strict anti-VPN system. Any user who is banned will be
                 permanently banned.</p>
@@ -138,7 +148,7 @@
             </p>
         </div>
 
-        <div class="term-item">
+        <div class="term-item fade-in-up delay-600">
             <h3>🎨 <span data-i18n="about_mission_title">Our Mission</span></h3>
             <p data-i18n="about_mission_content">At Wave Studios, our mission is to combine design, technology, and
                 innovation to deliver complete solutions — from visual identity and vehicle systems to intelligent
@@ -147,8 +157,8 @@
                 and professionalism.</p>
         </div>
 
-        <div style="text-align: center; margin-top: var(--spacing-xl);">
-            <a href="https://discord.gg/GdwDWPp7QE" target="_blank" class="btn btn-primary" data-i18n="cta_btn">Join
+        <div class="text-center mt-lg fade-in-up delay-600" style="margin-top: var(--spacing-xl);">
+            <a href="https://discord.gg/uk3TcdAyUS" target="_blank" class="btn btn-primary" data-i18n="cta_btn">Join
                 Discord Now</a>
         </div>
     </div>
@@ -160,12 +170,12 @@
             <p style="margin-top: 0.5rem;">
                 <a href="terms.html" data-i18n="nav_terms">Terms</a> •
                 <a href="about.html" data-i18n="nav_about">About Us</a> •
-                <a href="https://discord.gg/GdwDWPp7QE" target="_blank" data-i18n="nav_discord">Discord</a>
+                <a href="https://discord.gg/uk3TcdAyUS" target="_blank" data-i18n="nav_discord">Discord</a>
             </p>
         </div>
     </footer>
 
-    <script src="translations.js"></script>
+    <script src="../js/translations.js"></script>
 </body>
 
 </html>
