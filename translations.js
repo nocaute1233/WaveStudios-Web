@@ -1175,19 +1175,14 @@ function initLanguageSelector() {
 
   const langOptions = langSelector.querySelector('.lang-options');
 
-  // Determine base path for assets based on current location
-  // If we are in the /pages/ directory, we need to go up one level
-  const isPagesDir = window.location.pathname.includes('/pages/');
-  const basePath = isPagesDir ? '../' : '';
-
   // Create language options
   Object.keys(languages).forEach(langCode => {
     const option = document.createElement('div');
     option.className = 'lang-option';
     option.setAttribute('data-lang', langCode);
 
-    // Adjust flag path based on location
-    const flagPath = `${basePath}assets/images/${languages[langCode].flag}`;
+    // No base path or folder prefix since everything is in root
+    const flagPath = languages[langCode].flag;
 
     // Use img tag for flag
     option.innerHTML = `<img src="${flagPath}" alt="${languages[langCode].name}" class="lang-flag"> <span>${languages[langCode].name}</span>`;
@@ -1217,24 +1212,8 @@ function initLanguageSelector() {
   });
 }
 
-// Function to load icons dynamically
-function loadIcons() {
-  // Determine base path for assets based on current location
-  const isPagesDir = window.location.pathname.includes('/pages/');
-  const basePath = isPagesDir ? '../' : '';
-
-  const icons = document.querySelectorAll('[data-icon]');
-  icons.forEach(icon => {
-    const filename = icon.getAttribute('data-icon');
-    if (filename) {
-      icon.src = `${basePath}assets/icons/${filename}`;
-    }
-  });
-}
-
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
   initLanguageSelector();
   translatePage();
-  loadIcons();
 });
